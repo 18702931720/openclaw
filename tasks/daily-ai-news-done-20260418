@@ -1,0 +1,11 @@
+{
+  "task": "daily_ai_news",
+  "created_at": "2026-04-18T07:00:01+08:00",
+  "config": {
+    "domestic_count": 6,
+    "international_count": 6,
+    "channel": "wecom",
+    "recipient": "J 哥",
+    "recipient_id": "004235"
+  }
+}

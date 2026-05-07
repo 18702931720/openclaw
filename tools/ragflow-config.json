@@ -1,0 +1,13 @@
+{
+  "ragflow": {
+    "enabled": true,
+    "base_url": "https://aiplatformtest.sinoboom.com.cn",
+    "api_key": "ragflow-FcBk2dcA9daM3eH2Yt7Ady4sDWN3zDbYTpvCfLaW8xo",
+    "mode": "agent",
+    "agent_id": "675e6fe42f0011f1bc6b2950cf007153",
+    "api_endpoint": "/api/v1/agents_openai/{agent_id}/chat/completions",
+    "stream": false,
+    "reference": true,
+    "description": "RAGFlow 知识库检索配置 - 财务知识库"
+  }
+}

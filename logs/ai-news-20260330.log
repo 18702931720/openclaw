@@ -1,0 +1,12 @@
+[2026-03-30 22:57:17] ========== AI 资讯推送任务开始 ==========
+[2026-03-30 22:57:17] 任务标记已创建：/home/admin/.openclaw/workspace/tasks/daily-ai-news-pending
+[2026-03-30 22:57:17] 尝试通过 OpenClaw CLI 触发任务...
+gateway connect failed: GatewayClientRequestError: pairing required
+Error: gateway closed (1008): pairing required
+Gateway target: ws://127.0.0.1:15654
+Source: local loopback
+Config: /home/admin/.openclaw/openclaw.json
+Bind: lan
+[2026-03-30 22:57:26] message send 执行失败
+[2026-03-30 22:57:26] ========== AI 资讯推送任务结束 ==========
+

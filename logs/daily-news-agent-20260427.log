@@ -1,0 +1,28 @@
+[2026-04-27 09:46:49] ========== AI 资讯定时推送开始 ==========
+[2026-04-27 09:46:49] 触发 agent 发送...
+Gateway agent failed; falling back to embedded: Error: Pass --to <E.164>, --session-id, or --agent to choose a session
+Error: Pass --to <E.164>, --session-id, or --agent to choose a session
+[2026-04-27 09:46:55] ❌ 推送失败，退出码: 1
+[2026-04-27 09:46:55] ========== AI 资讯定时推送结束 ==========
+
+gateway connect failed: GatewayClientRequestError: pairing required
+Gateway agent failed; falling back to embedded: Error: gateway closed (1008): pairing required
+Gateway target: ws://127.0.0.1:15654
+Source: local loopback
+Config: /home/admin/.openclaw/openclaw.json
+Bind: lan
+[agents/model-providers] [xai-auth] bootstrap config fallback: no config-backed key found
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: dashscope-cfg (/home/admin/.openclaw/extensions/dashscope-cfg/index.ts). Set plugins.allow to explicit trusted ids.
+[plugins] dashscope-cfg: loaded without install/load-path provenance; treat as untracked local code and pin trust via plugins.allow or install records (/home/admin/.openclaw/extensions/dashscope-cfg/index.ts)
+[qqbot-channel-api] No QQBot accounts configured, skipping
+[qqbot-remind] Registered QQBot remind tool
+[plugins] ragflow-mcp failed during register from /home/admin/.openclaw/extensions/ragflow-mcp/index.js: TypeError: Cannot read properties of undefined (reading 'define')
+[agents/model-providers] [xai-auth] bootstrap config fallback: no config-backed key found
+[plugins] dashscope-cfg: loaded without install/load-path provenance; treat as untracked local code and pin trust via plugins.allow or install records (/home/admin/.openclaw/extensions/dashscope-cfg/index.ts)
+[qqbot-channel-api] No QQBot accounts configured, skipping
+[qqbot-remind] Registered QQBot remind tool
+[plugins] ragflow-mcp failed during register from /home/admin/.openclaw/extensions/ragflow-mcp/index.js: TypeError: Cannot read properties of undefined (reading 'define')
+[diagnostic] lane task error: lane=main durationMs=13834 error="Error: session file locked (timeout 10000ms): pid=326914 /home/admin/.openclaw/agents/main/sessions/09c78cce-5683-47ce-a4d6-b93388ef0118.jsonl.lock"
+[diagnostic] lane task error: lane=session:agent:main:wecom:direct:004235 durationMs=13838 error="Error: session file locked (timeout 10000ms): pid=326914 /home/admin/.openclaw/agents/main/sessions/09c78cce-5683-47ce-a4d6-b93388ef0118.jsonl.lock"
+[model-fallback/decision] model fallback decision: decision=candidate_failed requested=minimax/MiniMax-M2.7 candidate=minimax/MiniMax-M2.7 reason=timeout next=none
+FailoverError: session file locked (timeout 10000ms): pid=326914 /home/admin/.openclaw/agents/main/sessions/09c78cce-5683-47ce-a4d6-b93388ef0118.jsonl.lock

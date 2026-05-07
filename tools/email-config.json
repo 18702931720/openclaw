@@ -1,0 +1,37 @@
+{
+  "email": {
+    "accounts": [
+      {
+        "name": "企业邮箱",
+        "email": "kim.han@sinoboom.com.cn",
+        "type": "imap",
+        "imap": {
+          "host": "imap.qiye.163.com",
+          "port": 993,
+          "secure": true,
+          "username": "kim.han@sinoboom.com.cn",
+          "password": "ZE3#PgJe4W#SPgHC"
+        },
+        "smtp": {
+          "host": "smtp.qiye.163.com",
+          "port": 465,
+          "secure": true,
+          "username": "kim.han@sinoboom.com.cn",
+          "password": "ZE3#PgJe4W#SPgHC"
+        },
+        "check_interval_minutes": 10,
+        "notify_channel": "wecom",
+        "notify_to": "004235"
+      }
+    ],
+    "hooks": {
+      "enabled": true,
+      "on_new_email": {
+        "action": "notify",
+        "template": "📧 新邮件提醒\n\n发件人：{{from}}\n主题：{{subject}}\n时间：{{date}}\n\n摘要：{{snippet}}",
+        "summarize": true,
+        "model": "modelstudio/qwen3.5-plus"
+      }
+    }
+  }
+}
