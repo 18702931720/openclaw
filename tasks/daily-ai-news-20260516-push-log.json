@@ -1,0 +1,16 @@
+{
+  "task": "daily_ai_news",
+  "recipients": [
+    {"id": "004235", "name": "韩瑾君", "alias": "J 哥"},
+    {"id": "004245", "name": "李运华", "alias": ""},
+    {"id": "HW20260114", "name": "胡佳睿", "alias": ""},
+    {"id": "000002", "name": "许红霞", "alias": ""},
+    {"id": "003476", "name": "Ben Xie", "alias": ""}
+  ],
+  "created_at": "2026-05-16T02:30:00+08:00",
+  "push_time": "2026-05-16T10:30:00+08:00",
+  "status": "manual_push_success",
+  "domestic_count": 6,
+  "international_count": 6,
+  "channel": "wecom"
+}

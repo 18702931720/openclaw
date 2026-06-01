@@ -1,0 +1,13 @@
+{
+  "action": "send_news",
+  "collected_file": "/home/admin/.openclaw/workspace/tasks/daily-ai-news-collected-20260524.md",
+  "push_date": "2026-05-24",
+  "push_time": "2026-05-24 07:00",
+  "recipient": {
+    "id": "004235",
+    "name": "韩瑾君"
+  },
+  "domestic_count": 6,
+  "international_count": 6,
+  "created_at": "2026-05-24T07:00:02.024635"
+}

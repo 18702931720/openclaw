@@ -1,0 +1,273 @@
+{
+  "QClaw": {
+    "name": "QClaw",
+    "vendor": "腾讯",
+    "category": "互联网大厂",
+    "description": "微信通道最强玩家，C端AI助手标杆",
+    "url": "https://qclaw.qq.com/",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://qclaw.qq.com/",
+        "title": "QClaw - 微信远程办公 AI 助手 | 腾讯出品",
+        "content_preview": "QClaw - 微信远程办公 AI 助手 | 腾讯出品 腾讯电脑管家官方出品 随时随地，微信一下，QClaw 帮你高效干活 macOS (Apple 芯片) macOS (Intel 芯片) Windows 自动部署，打开即用支持 Mac & Windows，内置国产优质大模型，支持切换自定义模型开箱即用 微信直接对话，远程操控直接关联微信，零配置，随时随地远程让 AI 干活微信直联 丰富 Skills 生态支持Skills市场，如ClawHub、GitHub 等丰富生态，Skills 随取随用丰富生态 🦞持续记忆，你的专属龙虾记住偏好和上下文，持续成长，越来越懂你的 AI懂你所想 本地部署，"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/changelog",
+        "title": "页面不存在 - QClaw"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/docs",
+        "title": "页面不存在 - QClaw"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/update",
+        "title": "页面不存在 - QClaw"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/news",
+        "title": "页面不存在 - QClaw"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/blog",
+        "title": "页面不存在 - QClaw"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "WorkBuddy": {
+    "name": "WorkBuddy",
+    "vendor": "腾讯",
+    "category": "互联网大厂",
+    "description": "企业级AI助手，审计日志+权限控制",
+    "url": "https://workbuddy.qq.com/",
+    "has_url_update": false,
+    "url_updates": [],
+    "news": [],
+    "url_status": "unchanged"
+  },
+  "ArkClaw": {
+    "name": "ArkClaw",
+    "vendor": "火山引擎（字节）",
+    "category": "互联网大厂",
+    "description": "飞书生态企业级AI Agent",
+    "url": "https://www.volcengine.com/product/arkclaw",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://www.volcengine.com/product/arkclaw",
+        "title": "",
+        "content_preview": "You need to enable JavaScript to run this app.-->We're sorry but react app doesn't work properly without JavaScript enabled. Please enable it to continue.-->-->-->-->"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.volcengine.com/product/arkclaw",
+        "title": ""
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.volcengine.com/docs",
+        "title": "文档中心-火山引擎"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.volcengine.com/changelog",
+        "title": "火山引擎-你的AI云"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.volcengine.com/news",
+        "title": "发布中心-火山引擎"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "CoPaw": {
+    "name": "CoPaw",
+    "vendor": "阿里云",
+    "category": "互联网大厂",
+    "description": "钉钉/飞书/QQ全家桶集成，电商运营全流程",
+    "url": "https://www.aliyun.com/",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://www.aliyun.com/",
+        "title": "Alibaba Cloud: AI and Cloud Computing Services",
+        "content_preview": "Alibaba Cloud: AI and Cloud Computing Services Powerful AI Cloud Platform&quot;,&quot;desc&quot;:&quot;For AI Builders shaping the future and Enterprises scaling AI securely. Redefining AI economics with unmatched speed, intelligence and affordability.&quot;,&quot;linkText&quot;:&quot;Start For Free"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.aliyun.com/product",
+        "title": "阿里云产品_云计算_数据库_大数据_人工智能-阿里云"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "钉钉悟空": {
+    "name": "钉钉悟空",
+    "vendor": "钉钉",
+    "category": "互联网大厂",
+    "description": "智能办公助手，钉钉深度集成",
+    "url": "https://www.dingtalk.com/",
+    "has_url_update": false,
+    "url_updates": [],
+    "news": [],
+    "url_status": "unchanged"
+  },
+  "DuClaw": {
+    "name": "DuClaw",
+    "vendor": "百度",
+    "category": "互联网大厂",
+    "description": "搜索+知识图谱，百度AI云集成",
+    "url": "https://cloud.baidu.com/",
+    "has_url_update": false,
+    "url_updates": [],
+    "news": [],
+    "url_status": "unchanged"
+  },
+  "MaxClaw": {
+    "name": "MaxClaw",
+    "vendor": "MiniMax",
+    "category": "AI厂商",
+    "description": "性价比之选，MoE模型低成本",
+    "url": "https://www.minimaxi.com/",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://www.minimaxi.com/",
+        "title": "Minimax",
+        "content_preview": "Minimax模型语言模型MiniMax M2.7MiniMax M2.5MiniMax M2-HerMiniMax M2.1MiniMax M2视频生成MiniMax Hailuo 2.3 / 2.3 FastMiniMax Hailuo 02语音&amp;音乐MiniMax Speech 2.8MiniMax Music 2.6产品MiniMax 桌面版Agent海螺视频语音星野APIToken Plan关于我们与所有人共创智能公司介绍新闻投资者关系加入我们EN登录API 开放平台MiniMax Agent海螺视频MiniMax 语音模型语言模型MiniMax M2.7NEWMiniMax"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.minimaxi.com/product",
+        "title": "Minimax"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.minimaxi.com/docs",
+        "title": "Minimax"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.minimaxi.com/changelog",
+        "title": "Minimax"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.minimaxi.com/news",
+        "title": "MiniMax 新闻资讯 - 人工智能行业动态 | MiniMax"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "KimiClaw": {
+    "name": "KimiClaw",
+    "vendor": "月之暗面",
+    "category": "AI厂商",
+    "description": "知识工作者利器，超长上下文",
+    "url": "https://www.moonshot.cn/",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://www.moonshot.cn/",
+        "title": "Moonshot AI",
+        "content_preview": "Moonshot AI 寻求将能源转化为智能的最优解体验 Kimi体验 API最新研究我们的研究团队致力于实现 AGI，并为全球开源技术社区带来最新研究查看更多2026-04-20Kimi K2.62026-02-09Agent Swarm2026-02-03WorldVQA轻松解决复杂难题以新一代大模型能力为基座，赋能深度研究、一键建站、智能制表及 PPT 自主编辑，让复杂工作化繁为简Kimi K2.6原生多模态理解、超强的代码能力和 Agent 性能，多种模式，任你选择探索功能一念之间，万象 Kimi节日、纪念日、话题... 每一个 Doodle 都是愉悦的惊喜，一键打开 Kimi 多重宇"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.moonshot.cn/product",
+        "title": "Welcome to nginx!"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.moonshot.cn/docs",
+        "title": "Welcome to nginx!"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.moonshot.cn/changelog",
+        "title": "Welcome to nginx!"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.moonshot.cn/news",
+        "title": "Welcome to nginx!"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "AutoClaw": {
+    "name": "AutoClaw",
+    "vendor": "智谱AI",
+    "category": "AI厂商",
+    "description": "隐私本地党首选，一键本地部署",
+    "url": "https://www.zhipuai.cn/",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://www.zhipuai.cn/",
+        "title": "Z.ai - Inspiring AGI to Benefit Humanity",
+        "content_preview": "Z.ai - Inspiring AGI to Benefit Humanity头脑风暴逻辑推理信息问答内容创作创意开发AutoClaw只需1分钟，给每台电脑装上小龙虾GLM模型新一代大模型全栈技术体系GLM-5-TurboGLM-5-Turbo专为龙虾场景打造的基座模型，从训练层深度优化Agent核心能力，大幅提升工具调用与长链路执行能力。GLM-5 在 SWE-bench Verified、Terminal Bench 2.0 等智能体编程核心榜单上，GLM-5 达到开源模型 SOTA，比肩 Claude Opus 4.5GLM-4.6V全球 100B 级效果表现出众的开源视觉推理模型Au"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.zhipuai.cn/product",
+        "title": "Z.ai - Inspiring AGI to Benefit Humanity"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.zhipuai.cn/docs",
+        "title": "Z.ai - Inspiring AGI to Benefit Humanity"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.zhipuai.cn/changelog",
+        "title": "Z.ai - Inspiring AGI to Benefit Humanity"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.zhipuai.cn/news",
+        "title": "Z.ai - Inspiring AGI to Benefit Humanity"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "QeeClaw": {
+    "name": "QeeClaw",
+    "vendor": "第三方",
+    "category": "垂直专业版",
+    "description": "企业超级秘书，私有化部署",
+    "url": null,
+    "has_url_update": false,
+    "url_updates": [],
+    "news": []
+  },
+  "RetailClaw": {
+    "name": "RetailClaw",
+    "vendor": "第三方",
+    "category": "垂直专业版",
+    "description": "亚马逊品牌运营自动化",
+    "url": null,
+    "has_url_update": false,
+    "url_updates": [],
+    "news": []
+  }
+}

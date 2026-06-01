@@ -84,6 +84,61 @@
 
 ---
 
+## 🔍 竞品情报雷达任务
+
+### 触发条件
+检测到文件：`/home/admin/.openclaw/workspace/tasks/competitor-radar-send-trigger-YYYYMMDD.json`
+
+### 任务配置
+读取触发器文件中的 JSON 配置：
+```json
+{
+  "action": "send_competitor_radar",
+  "report_file": "/path/to/competitor-radar-YYYYMMDD.md",
+  "data_file": "/path/to/competitor-radar-data-YYYYMMDD.json",
+  "wecom_file": "/path/to/competitor-radar-wecom-YYYYMMDD.txt",
+  "push_date": "YYYYMMDD",
+  "recipient": { "id": "004235", "name": "韩瑾君" }
+}
+```
+
+### 执行步骤
+
+1. **读取 wecom 文件**
+   - 读取 `competitor-radar-wecom-YYYYMMDD.txt` 内容
+   - 优先发送有官网更新 or 有新闻的产品
+
+2. **推送消息**
+   - 通过企业微信发送给 J 哥 (004235)
+   - 使用 message 工具，action=send
+
+3. **清理任务标记**
+   - 创建 `/home/admin/.openclaw/workspace/tasks/competitor-radar-done-YYYYMMDD` 空文件
+   - 删除发送触发器文件
+
+### 推送内容格式
+```
+🔍 竞品情报日报 | OpenClaw框架商业化产品
+📅 YYYYMMDD 下午版
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 官网有更新
+• 产品名（厂商）
+  摘要内容...
+
+🏷️ 互联网大厂
+🔄 产品A（腾讯）📰4条
+  → 新闻标题
+    摘要...
+...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤖 生成时间：HH:MM (GMT+8)
+```
+
+---
+
 ## 🔍 心跳检查建议
 
 在 HEARTBEAT.md 中添加：

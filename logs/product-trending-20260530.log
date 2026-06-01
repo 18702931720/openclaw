@@ -1,0 +1,76 @@
+[2026-05-30 08:00:01] 产品发现日报开始
+📅 Date: 2026-05-30
+
+🛠️ Fetching Product Hunt today's hot...
+   ✅ Found 10 products
+   - Agent A by Ahrefs
+   - Ava Studio
+   - /monitor by Firecrawl
+   - Coffee Piano
+   - Hyper: Self-driving Company Brain
+   - Integuru
+   - MoDev
+   - Drafted
+   - GPS
+   - Clipline
+
+🔧 Fetching AlternativeTo hot...
+  [WARN] GET https://alternativeto.net/ -> HTTP Error 403: Forbidden
+   ✅ Found 0 tools
+
+🤖 Fetching There's An AI For That...
+  [WARN] GET https://theresanaiforthat.com/ -> HTTP Error 403: Forbidden
+   ✅ Found 0 AI tools
+
+📰 Fetching Hacker News today's hot...
+   ✅ Found 10 topics
+   - [308 pts] SQLite is all you need for durable workflows
+   - [299 pts] Notes from the Mistral AI Now Summit
+   - [162 pts] The California state assembly has passed the 'Protect Our Ga
+   - [145 pts] Microsoft 0-day feud escalates as researcher threatens anoth
+   - [138 pts] Liquid AI reveals 8B-A1B MoE trained on 38T
+   - [132 pts] On Rendering Diffs
+   - [112 pts] Rothko for your current weather conditions
+   - [94 pts] Show HN: TV Explorer. Adding advanced UI to free online TV
+   - [68 pts] Show HN: Tiny-vLLM – high performance LLM inference engine i
+   - [65 pts] Shift will clean homes for free to train future robots
+
+📊 Total 20 items collected
+
+🤖 Generating 20 AI descriptions via MiniMax...
+   [Agent A by Ahrefs] 85 chars
+   [Ava Studio] 76 chars
+   [/monitor by Firecrawl] 78 chars
+   [Coffee Piano] 72 chars
+   [Hyper: Self-driving Company Brain] 69 chars
+   [Integuru] 68 chars
+   [MoDev] 66 chars
+   [Drafted] 68 chars
+   [GPS] 69 chars
+   [Clipline] 85 chars
+   [SQLite is all you need for durable workf] 68 chars
+   [Notes from the Mistral AI Now Summit] 71 chars
+   [The California state assembly has passed] 65 chars
+   [Microsoft 0-day feud escalates as resear] 73 chars
+   [Liquid AI reveals 8B-A1B MoE trained on ] 77 chars
+   [On Rendering Diffs] 67 chars
+   [Rothko for your current weather conditio] 67 chars
+   [Show HN: TV Explorer. Adding advanced UI] 71 chars
+   [Show HN: Tiny-vLLM – high performance LL] 69 chars
+   [Shift will clean homes for free to train] 65 chars
+
+📧 Generating email content...
+📤 Sending email to kim.han@sinoboom.com.cn...
+✅ Email sent successfully!
+
+=== JSON ===
+{
+  "success": true,
+  "date": "2026-05-30",
+  "product_hunt_count": 10,
+  "alternativeto_count": 0,
+  "ai_tools_count": 0,
+  "hacker_news_count": 10
+}
+=== END JSON ===
+[2026-05-30 08:00:33] ✅ 完成

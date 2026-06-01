@@ -1,0 +1,236 @@
+{
+  "QClaw": {
+    "name": "QClaw",
+    "vendor": "腾讯",
+    "category": "互联网大厂",
+    "description": "微信通道最强玩家，C端AI助手标杆",
+    "url": "https://qclaw.qq.com/",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://qclaw.qq.com/",
+        "title": "QClaw - 微信远程办公 AI 助手 | 腾讯出品",
+        "content_preview": "QClaw - 微信远程办公 AI 助手 | 腾讯出品 腾讯电脑管家官方出品 随时随地，微信一下，QClaw 帮你高效干活 macOS (Apple 芯片) macOS (Intel 芯片) Windows 自动部署，打开即用支持 Mac & Windows，内置国产优质大模型，支持切换自定义模型开箱即用 微信直接对话，远程操控直接关联微信，零配置，随时随地远程让 AI 干活微信直联 丰富 Skills 生态支持Skills市场，如ClawHub、GitHub 等丰富生态，Skills 随取随用丰富生态 🦞持续记忆，你的专属龙虾记住偏好和上下文，持续成长，越来越懂你的 AI懂你所想 本地部署，"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/changelog",
+        "title": "页面不存在 - QClaw"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/docs",
+        "title": "页面不存在 - QClaw"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/update",
+        "title": "页面不存在 - QClaw"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/news",
+        "title": "页面不存在 - QClaw"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://qclaw.qq.com/blog",
+        "title": "页面不存在 - QClaw"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "WorkBuddy": {
+    "name": "WorkBuddy",
+    "vendor": "腾讯",
+    "category": "互联网大厂",
+    "description": "企业级AI助手，审计日志+权限控制",
+    "url": "https://workbuddy.qq.com/",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://workbuddy.qq.com/",
+        "title": "WorkBuddy - AI Agent 办公新范式",
+        "content_preview": "WorkBuddy - AI Agent 办公新范式"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://workbuddy.qq.com/docs",
+        "title": "WorkBuddy - AI Agent 办公新范式"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://workbuddy.qq.com/news",
+        "title": "WorkBuddy - AI Agent 办公新范式"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://workbuddy.qq.com/changelog",
+        "title": "WorkBuddy - AI Agent 办公新范式"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "ArkClaw": {
+    "name": "ArkClaw",
+    "vendor": "火山引擎（字节）",
+    "category": "互联网大厂",
+    "description": "飞书生态企业级AI Agent",
+    "url": "https://www.volcengine.com/product/arkclaw",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://www.volcengine.com/product/arkclaw",
+        "title": "",
+        "content_preview": "You need to enable JavaScript to run this app.-->We're sorry but react app doesn't work properly without JavaScript enabled. Please enable it to continue.-->-->-->-->"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.volcengine.com/product/arkclaw",
+        "title": ""
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.volcengine.com/docs",
+        "title": "文档中心-火山引擎"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.volcengine.com/changelog",
+        "title": "火山引擎-你的AI云"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.volcengine.com/news",
+        "title": "发布中心-火山引擎"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "CoPaw": {
+    "name": "CoPaw",
+    "vendor": "阿里云",
+    "category": "互联网大厂",
+    "description": "钉钉/飞书/QQ全家桶集成，电商运营全流程",
+    "url": "https://www.aliyun.com/",
+    "has_url_update": false,
+    "url_updates": [],
+    "news": [],
+    "url_status": "unchanged"
+  },
+  "钉钉悟空": {
+    "name": "钉钉悟空",
+    "vendor": "钉钉",
+    "category": "互联网大厂",
+    "description": "智能办公助手，钉钉深度集成",
+    "url": "https://www.dingtalk.com/",
+    "has_url_update": false,
+    "url_updates": [],
+    "news": [],
+    "url_status": "unchanged"
+  },
+  "DuClaw": {
+    "name": "DuClaw",
+    "vendor": "百度",
+    "category": "互联网大厂",
+    "description": "搜索+知识图谱，百度AI云集成",
+    "url": "https://cloud.baidu.com/",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://cloud.baidu.com/",
+        "title": "百度智能云-云智一体深入产业",
+        "content_preview": "百度智能云-云智一体深入产业618年中钜惠百度搭子DuMate百度伐谋2.0百度千帆Hogee数字伙计智聚618 年中钜惠狂欢云服务器19.9元，充值送26888元，领万元券包减6000元，云大使赢iPhone17 ProMax立即选购百度搭子DuMate你的超级AI助手，真干活，用「搭子」立即体验百度伐谋2.0 全新升级对话式推演：业务需求对话式澄清，决策可视化生成立即体验即刻开启大模型旅程百度千帆Token福利包正式上线 玩转主流模型+高适配Skills 立即体验Hogee数字伙计企业一站式AI营销应用立即体验12345新客首购0.6折企业权益0.99元云服务器19.9元.cn域名9元起A"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "MaxClaw": {
+    "name": "MaxClaw",
+    "vendor": "MiniMax",
+    "category": "AI厂商",
+    "description": "性价比之选，MoE模型低成本",
+    "url": "https://www.minimaxi.com/",
+    "has_url_update": true,
+    "url_updates": [
+      {
+        "type": "homepage",
+        "url": "https://www.minimaxi.com/",
+        "title": "MiniMax",
+        "content_preview": "MiniMax模型语言模型MiniMax M2.7MiniMax M2.5MiniMax M2-HerMiniMax M2.1MiniMax M2视频生成MiniMax Hailuo 2.3 / 2.3 FastMiniMax Hailuo 02语音&amp;音乐MiniMax Speech 2.8MiniMax Music 2.6产品MiniMax 桌面版Agent海螺视频语音星野APIToken Plan研究关于我们与所有人共创智能公司介绍新闻投资者关系加入我们EN登录API 开放平台MiniMax Agent海螺视频MiniMax 语音模型语言模型MiniMax M2.7NEWMiniM"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.minimaxi.com/product",
+        "title": "MiniMax"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.minimaxi.com/docs",
+        "title": "MiniMax"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.minimaxi.com/changelog",
+        "title": "MiniMax"
+      },
+      {
+        "type": "indicator_page",
+        "url": "https://www.minimaxi.com/news",
+        "title": "MiniMax 新闻资讯 - 人工智能行业动态 | MiniMax"
+      }
+    ],
+    "news": [],
+    "url_status": "updated"
+  },
+  "KimiClaw": {
+    "name": "KimiClaw",
+    "vendor": "月之暗面",
+    "category": "AI厂商",
+    "description": "知识工作者利器，超长上下文",
+    "url": "https://www.moonshot.cn/",
+    "has_url_update": false,
+    "url_updates": [],
+    "news": [],
+    "url_status": "unchanged"
+  },
+  "AutoClaw": {
+    "name": "AutoClaw",
+    "vendor": "智谱AI",
+    "category": "AI厂商",
+    "description": "隐私本地党首选，一键本地部署",
+    "url": "https://www.zhipuai.cn/",
+    "has_url_update": false,
+    "url_updates": [],
+    "news": [],
+    "url_status": "unchanged"
+  },
+  "QeeClaw": {
+    "name": "QeeClaw",
+    "vendor": "第三方",
+    "category": "垂直专业版",
+    "description": "企业超级秘书，私有化部署",
+    "url": null,
+    "has_url_update": false,
+    "url_updates": [],
+    "news": []
+  },
+  "RetailClaw": {
+    "name": "RetailClaw",
+    "vendor": "第三方",
+    "category": "垂直专业版",
+    "description": "亚马逊品牌运营自动化",
+    "url": null,
+    "has_url_update": false,
+    "url_updates": [],
+    "news": []
+  }
+}

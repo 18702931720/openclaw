@@ -1,0 +1,791 @@
+📅 日期: 2026-05-16
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [tinyhumansai/openhuman] ... OK (README: 4000 字)
+  [obra/superpowers] ... OK (README: 4000 字)
+  [K-Dense-AI/scientific-agent-skills] ... OK (README: 4000 字)
+  [supertone-inc/supertonic] ... OK (README: 4000 字)
+  [ruvnet/RuView] ... OK (README: 4000 字)
+  [influxdata/telegraf] ... OK (README: 4000 字)
+  [anthropics/skills] ... OK (README: 4000 字)
+  [czlonkowski/n8n-mcp] ... OK (README: 4000 字)
+  [NVIDIA-AI-Blueprints/video-search-and-summarization] ... OK (README: 4000 字)
+  [oven-sh/bun] ... OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [tinyhumansai/openhuman] AI 描述长度: 486 字
+  [obra/superpowers] AI 描述长度: 557 字
+  [K-Dense-AI/scientific-agent-skills] AI 描述长度: 567 字
+  [supertone-inc/supertonic] AI 描述长度: 548 字
+  [ruvnet/RuView] AI 描述长度: 541 字
+  [influxdata/telegraf] AI 描述长度: 559 字
+  [anthropics/skills] AI 描述长度: 543 字
+  [czlonkowski/n8n-mcp] AI 描述长度: 629 字
+  [NVIDIA-AI-Blueprints/video-search-and-summarization] AI 描述长度: 601 字
+  [oven-sh/bun] AI 描述长度: 754 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-16"
+}
+=== END JSON ===
+📅 日期: 2026-05-17
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 8 个项目，正在获取详情...
+  [oven-sh/bun] ...   [oven-sh/bun] ... 使用缓存
+OK (README: 4000 字)
+  [K-Dense-AI/scientific-agent-skills] ...   [K-Dense-AI/scientific-agent-skills] ... 使用缓存
+OK (README: 4000 字)
+  [obra/superpowers] ...   [obra/superpowers] ... 使用缓存
+OK (README: 4000 字)
+  [Anil-matcha/Open-Generative-AI] ... OK (README: 3999 字)
+  [supertone-inc/supertonic] ...   [supertone-inc/supertonic] ... 使用缓存
+OK (README: 4000 字)
+  [tinyhumansai/openhuman] ...   [tinyhumansai/openhuman] ... 使用缓存
+OK (README: 4000 字)
+  [ruvnet/RuView] ...   [ruvnet/RuView] ... 使用缓存
+OK (README: 4000 字)
+  [colbymchenry/codegraph] ... OK (README: 3999 字)
+
+✅ 成功获取 8 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [oven-sh/bun] 使用已缓存的描述 (754 字)
+  [K-Dense-AI/scientific-agent-skills] 使用已缓存的描述 (567 字)
+  [obra/superpowers] 使用已缓存的描述 (557 字)
+  [supertone-inc/supertonic] 使用已缓存的描述 (548 字)
+  [tinyhumansai/openhuman] 使用已缓存的描述 (486 字)
+  [ruvnet/RuView] 使用已缓存的描述 (541 字)
+  [oven-sh/bun] AI 描述长度: 522 字
+  [K-Dense-AI/scientific-agent-skills] AI 描述长度: 485 字
+  [obra/superpowers] AI 描述长度: 478 字
+  [Anil-matcha/Open-Generative-AI] AI 描述长度: 550 字
+  [supertone-inc/supertonic] AI 描述长度: 455 字
+  [tinyhumansai/openhuman] AI 描述长度: 426 字
+  [ruvnet/RuView] AI 描述长度: 430 字
+  [colbymchenry/codegraph] AI 描述长度: 520 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 8,
+  "date": "2026-05-17"
+}
+=== END JSON ===
+📅 日期: 2026-05-18
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [tinyhumansai/openhuman] ...   [tinyhumansai/openhuman] ... 使用缓存
+OK (README: 4000 字)
+  [HKUDS/CLI-Anything] ... OK (README: 4000 字)
+  [calcom/cal.diy] ... OK (README: 4000 字)
+  [oven-sh/bun] ...   [oven-sh/bun] ... 使用缓存
+OK (README: 4000 字)
+  [Anil-matcha/Open-Generative-AI] ...   [Anil-matcha/Open-Generative-AI] ... 使用缓存
+OK (README: 3999 字)
+  [BigBodyCobain/Shadowbroker] ... OK (README: 3999 字)
+  [tech-leads-club/agent-skills] ... OK (README: 4000 字)
+  [NirDiamant/agents-towards-production] ... OK (README: 3999 字)
+  [dograh-hq/dograh] ... OK (README: 4000 字)
+  [K-Dense-AI/scientific-agent-skills] ...   [K-Dense-AI/scientific-agent-skills] ... 使用缓存
+OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [tinyhumansai/openhuman] 使用已缓存的描述 (426 字)
+  [oven-sh/bun] 使用已缓存的描述 (522 字)
+  [Anil-matcha/Open-Generative-AI] 使用已缓存的描述 (550 字)
+  [K-Dense-AI/scientific-agent-skills] 使用已缓存的描述 (485 字)
+  [WARN] MiniMax 失败: The read operation timed out
+  [tinyhumansai/openhuman] AI 描述长度: 410 字
+  [HKUDS/CLI-Anything] AI 描述长度: 456 字
+  [calcom/cal.diy] AI 描述长度: 445 字
+  [oven-sh/bun] AI 描述长度: 503 字
+  [Anil-matcha/Open-Generative-AI] AI 描述长度: 526 字
+  [BigBodyCobain/Shadowbroker] AI 描述长度: 495 字
+  [tech-leads-club/agent-skills] AI 描述长度: 522 字
+  [NirDiamant/agents-towards-production] AI 描述长度: 513 字
+  [dograh-hq/dograh] AI 描述长度: 431 字
+  [K-Dense-AI/scientific-agent-skills] AI 描述长度: 556 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-18"
+}
+=== END JSON ===
+📅 日期: 2026-05-19
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [tinyhumansai/openhuman] ...   [tinyhumansai/openhuman] ... 使用缓存
+OK (README: 4000 字)
+  [Imbad0202/academic-research-skills] ... OK (README: 3999 字)
+  [HKUDS/CLI-Anything] ...   [HKUDS/CLI-Anything] ... 使用缓存
+OK (README: 4000 字)
+  [K-Dense-AI/scientific-agent-skills] ...   [K-Dense-AI/scientific-agent-skills] ... 使用缓存
+OK (README: 4000 字)
+  [supertone-inc/supertonic] ...   [supertone-inc/supertonic] ... 使用缓存
+OK (README: 4000 字)
+  [ggml-org/llama.cpp] ... OK (README: 4000 字)
+  [ruvnet/RuView] ...   [ruvnet/RuView] ... 使用缓存
+OK (README: 4000 字)
+  [CloakHQ/CloakBrowser] ... OK (README: 4000 字)
+  [tech-leads-club/agent-skills] ...   [tech-leads-club/agent-skills] ... 使用缓存
+OK (README: 4000 字)
+  [BigBodyCobain/Shadowbroker] ...   [BigBodyCobain/Shadowbroker] ... 使用缓存
+OK (README: 3999 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [tinyhumansai/openhuman] 使用已缓存的描述 (410 字)
+  [HKUDS/CLI-Anything] 使用已缓存的描述 (456 字)
+  [K-Dense-AI/scientific-agent-skills] 使用已缓存的描述 (556 字)
+  [supertone-inc/supertonic] 使用已缓存的描述 (455 字)
+  [ruvnet/RuView] 使用已缓存的描述 (430 字)
+  [tech-leads-club/agent-skills] 使用已缓存的描述 (522 字)
+  [BigBodyCobain/Shadowbroker] 使用已缓存的描述 (495 字)
+  [tinyhumansai/openhuman] AI 描述长度: 409 字
+  [Imbad0202/academic-research-skills] AI 描述长度: 472 字
+  [HKUDS/CLI-Anything] AI 描述长度: 463 字
+  [K-Dense-AI/scientific-agent-skills] AI 描述长度: 523 字
+  [supertone-inc/supertonic] AI 描述长度: 459 字
+  [ggml-org/llama.cpp] AI 描述长度: 483 字
+  [ruvnet/RuView] AI 描述长度: 515 字
+  [CloakHQ/CloakBrowser] AI 描述长度: 564 字
+  [tech-leads-club/agent-skills] AI 描述长度: 562 字
+  [BigBodyCobain/Shadowbroker] AI 描述长度: 547 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-19"
+}
+=== END JSON ===
+📅 日期: 2026-05-20
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [tinyhumansai/openhuman] ...   [tinyhumansai/openhuman] ... 使用缓存
+OK (README: 4000 字)
+  [HKUDS/CLI-Anything] ...   [HKUDS/CLI-Anything] ... 使用缓存
+OK (README: 4000 字)
+  [Imbad0202/academic-research-skills] ...   [Imbad0202/academic-research-skills] ... 使用缓存
+OK (README: 3999 字)
+  [obra/superpowers] ...   [obra/superpowers] ... 使用缓存
+OK (README: 4000 字)
+  [anthropics/claude-plugins-official] ... OK (README: 1899 字)
+  [rohitg00/agentmemory] ... OK (README: 4000 字)
+  [CloakHQ/CloakBrowser] ...   [CloakHQ/CloakBrowser] ... 使用缓存
+OK (README: 4000 字)
+  [rtk-ai/rtk] ... OK (README: 4000 字)
+  [msitarzewski/agency-agents] ... OK (README: 4000 字)
+  [colbymchenry/codegraph] ...   [colbymchenry/codegraph] ... 使用缓存
+OK (README: 3999 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [tinyhumansai/openhuman] 使用已缓存的描述 (409 字)
+  [HKUDS/CLI-Anything] 使用已缓存的描述 (463 字)
+  [Imbad0202/academic-research-skills] 使用已缓存的描述 (472 字)
+  [obra/superpowers] 使用已缓存的描述 (478 字)
+  [CloakHQ/CloakBrowser] 使用已缓存的描述 (564 字)
+  [colbymchenry/codegraph] 使用已缓存的描述 (520 字)
+  [tinyhumansai/openhuman] AI 描述长度: 531 字
+  [HKUDS/CLI-Anything] AI 描述长度: 577 字
+  [Imbad0202/academic-research-skills] AI 描述长度: 569 字
+  [obra/superpowers] AI 描述长度: 509 字
+  [anthropics/claude-plugins-official] AI 描述长度: 648 字
+  [rohitg00/agentmemory] AI 描述长度: 498 字
+  [CloakHQ/CloakBrowser] AI 描述长度: 561 字
+  [rtk-ai/rtk] AI 描述长度: 542 字
+  [msitarzewski/agency-agents] AI 描述长度: 515 字
+  [colbymchenry/codegraph] AI 描述长度: 610 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-20"
+}
+=== END JSON ===
+📅 日期: 2026-05-21
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [colbymchenry/codegraph] ...   [colbymchenry/codegraph] ... 使用缓存
+OK (README: 3999 字)
+  [Imbad0202/academic-research-skills] ...   [Imbad0202/academic-research-skills] ... 使用缓存
+OK (README: 3999 字)
+  [tinyhumansai/openhuman] ...   [tinyhumansai/openhuman] ... 使用缓存
+OK (README: 4000 字)
+  [multica-ai/andrej-karpathy-skills] ... OK (README: 4000 字)
+  [rohitg00/ai-engineering-from-scratch] ... OK (README: 3999 字)
+  [HKUDS/CLI-Anything] ...   [HKUDS/CLI-Anything] ... 使用缓存
+OK (README: 4000 字)
+  [can1357/oh-my-pi] ... OK (README: 4000 字)
+  [obra/superpowers] ...   [obra/superpowers] ... 使用缓存
+OK (README: 4000 字)
+  [anthropics/claude-plugins-official] ...   [anthropics/claude-plugins-official] ... 使用缓存
+OK (README: 1899 字)
+  [msitarzewski/agency-agents] ...   [msitarzewski/agency-agents] ... 使用缓存
+OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [colbymchenry/codegraph] 使用已缓存的描述 (610 字)
+  [Imbad0202/academic-research-skills] 使用已缓存的描述 (569 字)
+  [tinyhumansai/openhuman] 使用已缓存的描述 (531 字)
+  [HKUDS/CLI-Anything] 使用已缓存的描述 (577 字)
+  [obra/superpowers] 使用已缓存的描述 (509 字)
+  [anthropics/claude-plugins-official] 使用已缓存的描述 (648 字)
+  [msitarzewski/agency-agents] 使用已缓存的描述 (515 字)
+  [colbymchenry/codegraph] AI 描述长度: 462 字
+  [Imbad0202/academic-research-skills] AI 描述长度: 478 字
+  [tinyhumansai/openhuman] AI 描述长度: 429 字
+  [multica-ai/andrej-karpathy-skills] AI 描述长度: 439 字
+  [rohitg00/ai-engineering-from-scratch] AI 描述长度: 448 字
+  [HKUDS/CLI-Anything] AI 描述长度: 492 字
+  [can1357/oh-my-pi] AI 描述长度: 422 字
+  [obra/superpowers] AI 描述长度: 476 字
+  [anthropics/claude-plugins-official] AI 描述长度: 546 字
+  [msitarzewski/agency-agents] AI 描述长度: 458 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-21"
+}
+=== END JSON ===
+📅 日期: 2026-05-22
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [anthropics/claude-plugins-official] ...   [anthropics/claude-plugins-official] ... 使用缓存
+OK (README: 1899 字)
+  [colbymchenry/codegraph] ...   [colbymchenry/codegraph] ... 使用缓存
+OK (README: 3999 字)
+  [multica-ai/andrej-karpathy-skills] ...   [multica-ai/andrej-karpathy-skills] ... 使用缓存
+OK (README: 4000 字)
+  [dotnet/skills] ... OK (README: 4000 字)
+  [obra/superpowers] ...   [obra/superpowers] ... 使用缓存
+OK (README: 4000 字)
+  [HKUDS/CLI-Anything] ...   [HKUDS/CLI-Anything] ... 使用缓存
+OK (README: 4000 字)
+  [rmyndharis/OpenWA] ... OK (README: 4000 字)
+  [ChromeDevTools/chrome-devtools-mcp] ... OK (README: 3999 字)
+  [rohitg00/ai-engineering-from-scratch] ...   [rohitg00/ai-engineering-from-scratch] ... 使用缓存
+OK (README: 3999 字)
+  [teng-lin/notebooklm-py] ... OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [anthropics/claude-plugins-official] 使用已缓存的描述 (546 字)
+  [colbymchenry/codegraph] 使用已缓存的描述 (462 字)
+  [multica-ai/andrej-karpathy-skills] 使用已缓存的描述 (439 字)
+  [obra/superpowers] 使用已缓存的描述 (476 字)
+  [HKUDS/CLI-Anything] 使用已缓存的描述 (492 字)
+  [rohitg00/ai-engineering-from-scratch] 使用已缓存的描述 (448 字)
+  [anthropics/claude-plugins-official] AI 描述长度: 592 字
+  [colbymchenry/codegraph] AI 描述长度: 525 字
+  [multica-ai/andrej-karpathy-skills] AI 描述长度: 487 字
+  [dotnet/skills] AI 描述长度: 532 字
+  [obra/superpowers] AI 描述长度: 522 字
+  [HKUDS/CLI-Anything] AI 描述长度: 516 字
+  [rmyndharis/OpenWA] AI 描述长度: 498 字
+  [ChromeDevTools/chrome-devtools-mcp] AI 描述长度: 592 字
+  [rohitg00/ai-engineering-from-scratch] AI 描述长度: 485 字
+  [teng-lin/notebooklm-py] AI 描述长度: 585 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-22"
+}
+=== END JSON ===
+📅 日期: 2026-05-23
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [anthropics/claude-plugins-official] ...   [anthropics/claude-plugins-official] ... 使用缓存
+OK (README: 1899 字)
+  [colbymchenry/codegraph] ...   [colbymchenry/codegraph] ... 使用缓存
+OK (README: 3999 字)
+  [ruvnet/RuView] ...   [ruvnet/RuView] ... 使用缓存
+OK (README: 4000 字)
+  [rohitg00/ai-engineering-from-scratch] ...   [rohitg00/ai-engineering-from-scratch] ... 使用缓存
+OK (README: 3999 字)
+  [ChromeDevTools/chrome-devtools-mcp] ...   [ChromeDevTools/chrome-devtools-mcp] ... 使用缓存
+OK (README: 3999 字)
+  [dotnet/skills] ...   [dotnet/skills] ... 使用缓存
+OK (README: 4000 字)
+  [Lum1104/Understand-Anything] ... OK (README: 4000 字)
+  [odoo/odoo] ... OK (README: 2043 字)
+  [byJoey/cfnew] ... OK (README: 4000 字)
+  [trimstray/the-book-of-secret-knowledge] ... OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [anthropics/claude-plugins-official] 使用已缓存的描述 (592 字)
+  [colbymchenry/codegraph] 使用已缓存的描述 (525 字)
+  [ruvnet/RuView] 使用已缓存的描述 (515 字)
+  [rohitg00/ai-engineering-from-scratch] 使用已缓存的描述 (485 字)
+  [ChromeDevTools/chrome-devtools-mcp] 使用已缓存的描述 (592 字)
+  [dotnet/skills] 使用已缓存的描述 (532 字)
+  [anthropics/claude-plugins-official] AI 描述长度: 417 字
+  [colbymchenry/codegraph] AI 描述长度: 453 字
+  [ruvnet/RuView] AI 描述长度: 440 字
+  [rohitg00/ai-engineering-from-scratch] AI 描述长度: 464 字
+  [ChromeDevTools/chrome-devtools-mcp] AI 描述长度: 515 字
+  [dotnet/skills] AI 描述长度: 464 字
+  [Lum1104/Understand-Anything] AI 描述长度: 435 字
+  [odoo/odoo] AI 描述长度: 383 字
+  [byJoey/cfnew] AI 描述长度: 542 字
+  [trimstray/the-book-of-secret-knowledge] AI 描述长度: 448 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-23"
+}
+=== END JSON ===
+📅 日期: 2026-05-24
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [Lum1104/Understand-Anything] ...   [Lum1104/Understand-Anything] ... 使用缓存
+OK (README: 4000 字)
+  [anthropics/claude-plugins-official] ...   [anthropics/claude-plugins-official] ... 使用缓存
+OK (README: 1899 字)
+  [colbymchenry/codegraph] ...   [colbymchenry/codegraph] ... 使用缓存
+OK (README: 3999 字)
+  [rohitg00/ai-engineering-from-scratch] ...   [rohitg00/ai-engineering-from-scratch] ... 使用缓存
+OK (README: 3999 字)
+  [Fincept-Corporation/FinceptTerminal] ... OK (README: 4000 字)
+  [multica-ai/andrej-karpathy-skills] ...   [multica-ai/andrej-karpathy-skills] ... 使用缓存
+OK (README: 4000 字)
+  [dotnet/skills] ...   [dotnet/skills] ... 使用缓存
+OK (README: 4000 字)
+  [ChromeDevTools/chrome-devtools-mcp] ...   [ChromeDevTools/chrome-devtools-mcp] ... 使用缓存
+OK (README: 3999 字)
+  [mukul975/Anthropic-Cybersecurity-Skills] ... OK (README: 4000 字)
+  [presenton/presenton] ... OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [Lum1104/Understand-Anything] 使用已缓存的描述 (435 字)
+  [anthropics/claude-plugins-official] 使用已缓存的描述 (417 字)
+  [colbymchenry/codegraph] 使用已缓存的描述 (453 字)
+  [rohitg00/ai-engineering-from-scratch] 使用已缓存的描述 (464 字)
+  [multica-ai/andrej-karpathy-skills] 使用已缓存的描述 (487 字)
+  [dotnet/skills] 使用已缓存的描述 (464 字)
+  [ChromeDevTools/chrome-devtools-mcp] 使用已缓存的描述 (515 字)
+  [Lum1104/Understand-Anything] AI 描述长度: 643 字
+  [anthropics/claude-plugins-official] AI 描述长度: 705 字
+  [colbymchenry/codegraph] AI 描述长度: 662 字
+  [rohitg00/ai-engineering-from-scratch] AI 描述长度: 614 字
+  [Fincept-Corporation/FinceptTerminal] AI 描述长度: 684 字
+  [multica-ai/andrej-karpathy-skills] AI 描述长度: 638 字
+  [dotnet/skills] AI 描述长度: 710 字
+  [ChromeDevTools/chrome-devtools-mcp] AI 描述长度: 709 字
+  [mukul975/Anthropic-Cybersecurity-Skills] AI 描述长度: 690 字
+  [presenton/presenton] AI 描述长度: 728 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-24"
+}
+=== END JSON ===
+📅 日期: 2026-05-25
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [Lum1104/Understand-Anything] ...   [Lum1104/Understand-Anything] ... 使用缓存
+OK (README: 4000 字)
+  [rohitg00/ai-engineering-from-scratch] ...   [rohitg00/ai-engineering-from-scratch] ... 使用缓存
+OK (README: 3999 字)
+  [anthropics/claude-plugins-official] ...   [anthropics/claude-plugins-official] ... 使用缓存
+OK (README: 1899 字)
+  [anthropics/knowledge-work-plugins] ... OK (README: 4000 字)
+  [multica-ai/andrej-karpathy-skills] ...   [multica-ai/andrej-karpathy-skills] ... 使用缓存
+OK (README: 4000 字)
+  [earendil-works/pi] ... OK (README: 4000 字)
+  [Alishahryar1/free-claude-code] ... OK (README: 4000 字)
+  [colbymchenry/codegraph] ...   [colbymchenry/codegraph] ... 使用缓存
+OK (README: 3999 字)
+  [multica-ai/multica] ... OK (README: 4000 字)
+  [shiyu-coder/Kronos] ... OK (README: 3997 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [Lum1104/Understand-Anything] 使用已缓存的描述 (643 字)
+  [rohitg00/ai-engineering-from-scratch] 使用已缓存的描述 (614 字)
+  [anthropics/claude-plugins-official] 使用已缓存的描述 (705 字)
+  [multica-ai/andrej-karpathy-skills] 使用已缓存的描述 (638 字)
+  [colbymchenry/codegraph] 使用已缓存的描述 (662 字)
+  [Lum1104/Understand-Anything] AI 描述长度: 449 字
+  [rohitg00/ai-engineering-from-scratch] AI 描述长度: 486 字
+  [anthropics/claude-plugins-official] AI 描述长度: 572 字
+  [anthropics/knowledge-work-plugins] AI 描述长度: 501 字
+  [multica-ai/andrej-karpathy-skills] AI 描述长度: 520 字
+  [earendil-works/pi] AI 描述长度: 617 字
+  [Alishahryar1/free-claude-code] AI 描述长度: 514 字
+  [colbymchenry/codegraph] AI 描述长度: 532 字
+  [multica-ai/multica] AI 描述长度: 527 字
+  [shiyu-coder/Kronos] AI 描述长度: 577 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-25"
+}
+=== END JSON ===
+📅 日期: 2026-05-26
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [Lum1104/Understand-Anything] ...   [Lum1104/Understand-Anything] ... 使用缓存
+OK (README: 4000 字)
+  [anthropics/knowledge-work-plugins] ...   [anthropics/knowledge-work-plugins] ... 使用缓存
+OK (README: 4000 字)
+  [rohitg00/ai-engineering-from-scratch] ...   [rohitg00/ai-engineering-from-scratch] ... 使用缓存
+OK (README: 3999 字)
+  [affaan-m/ECC] ... OK (README: 4000 字)
+  [mukul975/Anthropic-Cybersecurity-Skills] ...   [mukul975/Anthropic-Cybersecurity-Skills] ... 使用缓存
+OK (README: 4000 字)
+  [colbymchenry/codegraph] ...   [colbymchenry/codegraph] ... 使用缓存
+OK (README: 3999 字)
+  [manaflow-ai/cmux] ... OK (README: 3999 字)
+  [multica-ai/andrej-karpathy-skills] ...   [multica-ai/andrej-karpathy-skills] ... 使用缓存
+OK (README: 4000 字)
+  [Fincept-Corporation/FinceptTerminal] ...   [Fincept-Corporation/FinceptTerminal] ... 使用缓存
+OK (README: 4000 字)
+  [paperless-ngx/paperless-ngx] ... OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [Lum1104/Understand-Anything] 使用已缓存的描述 (449 字)
+  [anthropics/knowledge-work-plugins] 使用已缓存的描述 (501 字)
+  [rohitg00/ai-engineering-from-scratch] 使用已缓存的描述 (486 字)
+  [mukul975/Anthropic-Cybersecurity-Skills] 使用已缓存的描述 (690 字)
+  [colbymchenry/codegraph] 使用已缓存的描述 (532 字)
+  [multica-ai/andrej-karpathy-skills] 使用已缓存的描述 (520 字)
+  [Fincept-Corporation/FinceptTerminal] 使用已缓存的描述 (684 字)
+  [Lum1104/Understand-Anything] AI 描述长度: 389 字
+  [anthropics/knowledge-work-plugins] AI 描述长度: 366 字
+  [rohitg00/ai-engineering-from-scratch] AI 描述长度: 373 字
+  [affaan-m/ECC] AI 描述长度: 396 字
+  [mukul975/Anthropic-Cybersecurity-Skills] AI 描述长度: 443 字
+  [colbymchenry/codegraph] AI 描述长度: 421 字
+  [manaflow-ai/cmux] AI 描述长度: 370 字
+  [multica-ai/andrej-karpathy-skills] AI 描述长度: 427 字
+  [Fincept-Corporation/FinceptTerminal] AI 描述长度: 399 字
+  [paperless-ngx/paperless-ngx] AI 描述长度: 403 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-26"
+}
+=== END JSON ===
+📅 日期: 2026-05-27
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [Lum1104/Understand-Anything] ...   [Lum1104/Understand-Anything] ... 使用缓存
+OK (README: 4000 字)
+  [affaan-m/ECC] ...   [affaan-m/ECC] ... 使用缓存
+OK (README: 4000 字)
+  [rohitg00/ai-engineering-from-scratch] ...   [rohitg00/ai-engineering-from-scratch] ... 使用缓存
+OK (README: 3999 字)
+  [anthropics/knowledge-work-plugins] ...   [anthropics/knowledge-work-plugins] ... 使用缓存
+OK (README: 4000 字)
+  [mukul975/Anthropic-Cybersecurity-Skills] ...   [mukul975/Anthropic-Cybersecurity-Skills] ... 使用缓存
+OK (README: 4000 字)
+  [hardikpandya/stop-slop] ... OK (README: 1844 字)
+  [Leonxlnx/taste-skill] ... OK (README: 4000 字)
+  [DigitalPlatDev/FreeDomain] ... OK (README: 3217 字)
+  [jellyfin/jellyfin] ... OK (README: 4000 字)
+  [Axorax/awesome-free-apps] ... OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [Lum1104/Understand-Anything] 使用已缓存的描述 (389 字)
+  [affaan-m/ECC] 使用已缓存的描述 (396 字)
+  [rohitg00/ai-engineering-from-scratch] 使用已缓存的描述 (373 字)
+  [anthropics/knowledge-work-plugins] 使用已缓存的描述 (366 字)
+  [mukul975/Anthropic-Cybersecurity-Skills] 使用已缓存的描述 (443 字)
+  [Lum1104/Understand-Anything] AI 描述长度: 862 字
+  [affaan-m/ECC] AI 描述长度: 913 字
+  [rohitg00/ai-engineering-from-scratch] AI 描述长度: 803 字
+  [anthropics/knowledge-work-plugins] AI 描述长度: 753 字
+  [mukul975/Anthropic-Cybersecurity-Skills] AI 描述长度: 895 字
+  [hardikpandya/stop-slop] AI 描述长度: 787 字
+  [Leonxlnx/taste-skill] AI 描述长度: 821 字
+  [DigitalPlatDev/FreeDomain] AI 描述长度: 824 字
+  [jellyfin/jellyfin] AI 描述长度: 782 字
+  [Axorax/awesome-free-apps] AI 描述长度: 778 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-27"
+}
+=== END JSON ===
+📅 日期: 2026-05-28
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [harry0703/MoneyPrinterTurbo] ... OK (README: 4000 字)
+  [Lum1104/Understand-Anything] ...   [Lum1104/Understand-Anything] ... 使用缓存
+OK (README: 4000 字)
+  [hardikpandya/stop-slop] ...   [hardikpandya/stop-slop] ... 使用缓存
+OK (README: 1844 字)
+  [affaan-m/ECC] ...   [affaan-m/ECC] ... 使用缓存
+OK (README: 4000 字)
+  [anthropics/knowledge-work-plugins] ...   [anthropics/knowledge-work-plugins] ... 使用缓存
+OK (README: 4000 字)
+  [Leonxlnx/taste-skill] ...   [Leonxlnx/taste-skill] ... 使用缓存
+OK (README: 4000 字)
+  [p-e-w/heretic] ... OK (README: 4000 字)
+  [shiyu-coder/Kronos] ...   [shiyu-coder/Kronos] ... 使用缓存
+OK (README: 3997 字)
+  [mukul975/Anthropic-Cybersecurity-Skills] ...   [mukul975/Anthropic-Cybersecurity-Skills] ... 使用缓存
+OK (README: 4000 字)
+  [twentyhq/twenty] ... OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [Lum1104/Understand-Anything] 使用已缓存的描述 (862 字)
+  [hardikpandya/stop-slop] 使用已缓存的描述 (787 字)
+  [affaan-m/ECC] 使用已缓存的描述 (913 字)
+  [anthropics/knowledge-work-plugins] 使用已缓存的描述 (753 字)
+  [Leonxlnx/taste-skill] 使用已缓存的描述 (821 字)
+  [shiyu-coder/Kronos] 使用已缓存的描述 (577 字)
+  [mukul975/Anthropic-Cybersecurity-Skills] 使用已缓存的描述 (895 字)
+  [harry0703/MoneyPrinterTurbo] AI 描述长度: 398 字
+  [Lum1104/Understand-Anything] AI 描述长度: 426 字
+  [hardikpandya/stop-slop] AI 描述长度: 437 字
+  [affaan-m/ECC] AI 描述长度: 454 字
+  [anthropics/knowledge-work-plugins] AI 描述长度: 430 字
+  [Leonxlnx/taste-skill] AI 描述长度: 427 字
+  [p-e-w/heretic] AI 描述长度: 460 字
+  [shiyu-coder/Kronos] AI 描述长度: 375 字
+  [mukul975/Anthropic-Cybersecurity-Skills] AI 描述长度: 510 字
+  [twentyhq/twenty] AI 描述长度: 432 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-28"
+}
+=== END JSON ===
+📅 日期: 2026-05-29
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [harry0703/MoneyPrinterTurbo] ...   [harry0703/MoneyPrinterTurbo] ... 使用缓存
+OK (README: 4000 字)
+  [affaan-m/ECC] ...   [affaan-m/ECC] ... 使用缓存
+OK (README: 4000 字)
+  [Leonxlnx/taste-skill] ...   [Leonxlnx/taste-skill] ... 使用缓存
+OK (README: 4000 字)
+  [hardikpandya/stop-slop] ...   [hardikpandya/stop-slop] ... 使用缓存
+OK (README: 1844 字)
+  [twentyhq/twenty] ...   [twentyhq/twenty] ... 使用缓存
+OK (README: 4000 字)
+  [DigitalPlatDev/FreeDomain] ...   [DigitalPlatDev/FreeDomain] ... 使用缓存
+OK (README: 3217 字)
+  [byoungd/English-level-up-tips] ... OK (README: 3909 字)
+  [microsoft/markitdown] ... OK (README: 4000 字)
+  [obra/superpowers] ...   [obra/superpowers] ... 使用缓存
+OK (README: 4000 字)
+  [revfactory/harness] ... OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [harry0703/MoneyPrinterTurbo] 使用已缓存的描述 (398 字)
+  [affaan-m/ECC] 使用已缓存的描述 (454 字)
+  [Leonxlnx/taste-skill] 使用已缓存的描述 (427 字)
+  [hardikpandya/stop-slop] 使用已缓存的描述 (437 字)
+  [twentyhq/twenty] 使用已缓存的描述 (432 字)
+  [DigitalPlatDev/FreeDomain] 使用已缓存的描述 (824 字)
+  [obra/superpowers] 使用已缓存的描述 (522 字)
+  [harry0703/MoneyPrinterTurbo] AI 描述长度: 449 字
+  [affaan-m/ECC] AI 描述长度: 501 字
+  [Leonxlnx/taste-skill] AI 描述长度: 505 字
+  [hardikpandya/stop-slop] AI 描述长度: 537 字
+  [twentyhq/twenty] AI 描述长度: 505 字
+  [DigitalPlatDev/FreeDomain] AI 描述长度: 533 字
+  [byoungd/English-level-up-tips] AI 描述长度: 513 字
+  [microsoft/markitdown] AI 描述长度: 599 字
+  [obra/superpowers] AI 描述长度: 613 字
+  [revfactory/harness] AI 描述长度: 529 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-29"
+}
+=== END JSON ===
+📅 日期: 2026-05-30
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [harry0703/MoneyPrinterTurbo] ...   [harry0703/MoneyPrinterTurbo] ... 使用缓存
+OK (README: 4000 字)
+  [microsoft/markitdown] ...   [microsoft/markitdown] ... 使用缓存
+OK (README: 4000 字)
+  [EveryInc/compound-engineering-plugin] ... OK (README: 4000 字)
+  [twentyhq/twenty] ...   [twentyhq/twenty] ... 使用缓存
+OK (README: 4000 字)
+  [anthropics/claude-code] ... OK (README: 2872 字)
+  [Leonxlnx/taste-skill] ...   [Leonxlnx/taste-skill] ... 使用缓存
+OK (README: 4000 字)
+  [cursor/plugins] ... OK (README: 3585 字)
+  [run-llama/liteparse] ... OK (README: 4000 字)
+  [galilai-group/stable-worldmodel] ... OK (README: 4000 字)
+  [byoungd/English-level-up-tips] ...   [byoungd/English-level-up-tips] ... 使用缓存
+OK (README: 3909 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [harry0703/MoneyPrinterTurbo] 使用已缓存的描述 (449 字)
+  [microsoft/markitdown] 使用已缓存的描述 (599 字)
+  [twentyhq/twenty] 使用已缓存的描述 (505 字)
+  [Leonxlnx/taste-skill] 使用已缓存的描述 (505 字)
+  [byoungd/English-level-up-tips] 使用已缓存的描述 (513 字)
+  [harry0703/MoneyPrinterTurbo] AI 描述长度: 510 字
+  [microsoft/markitdown] AI 描述长度: 555 字
+  [EveryInc/compound-engineering-plugin] AI 描述长度: 634 字
+  [twentyhq/twenty] AI 描述长度: 553 字
+  [anthropics/claude-code] AI 描述长度: 570 字
+  [Leonxlnx/taste-skill] AI 描述长度: 583 字
+  [cursor/plugins] AI 描述长度: 625 字
+  [run-llama/liteparse] AI 描述长度: 609 字
+  [galilai-group/stable-worldmodel] AI 描述长度: 587 字
+  [byoungd/English-level-up-tips] AI 描述长度: 598 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-30"
+}
+=== END JSON ===
+📅 日期: 2026-05-31
+🔥 正在抓取 GitHub Trending 列表...
+✅ 找到 10 个项目，正在获取详情...
+  [microsoft/markitdown] ...   [microsoft/markitdown] ... 使用缓存
+OK (README: 4000 字)
+  [harry0703/MoneyPrinterTurbo] ...   [harry0703/MoneyPrinterTurbo] ... 使用缓存
+OK (README: 4000 字)
+  [anthropics/claude-code] ...   [anthropics/claude-code] ... 使用缓存
+OK (README: 2872 字)
+  [cursor/plugins] ...   [cursor/plugins] ... 使用缓存
+OK (README: 3585 字)
+  [revfactory/harness] ...   [revfactory/harness] ... 使用缓存
+OK (README: 4000 字)
+  [EveryInc/compound-engineering-plugin] ...   [EveryInc/compound-engineering-plugin] ... 使用缓存
+OK (README: 4000 字)
+  [affaan-m/ECC] ...   [affaan-m/ECC] ... 使用缓存
+OK (README: 4000 字)
+  [OpenBMB/VoxCPM] ... OK (README: 4000 字)
+  [galilai-group/stable-worldmodel] ...   [galilai-group/stable-worldmodel] ... 使用缓存
+OK (README: 4000 字)
+  [Crosstalk-Solutions/project-nomad] ... OK (README: 4000 字)
+
+✅ 成功获取 10 个项目详情
+🤖 正在调用 MiniMax M2.7 生成中文描述（批量模式）...
+  [microsoft/markitdown] 使用已缓存的描述 (555 字)
+  [harry0703/MoneyPrinterTurbo] 使用已缓存的描述 (510 字)
+  [anthropics/claude-code] 使用已缓存的描述 (570 字)
+  [cursor/plugins] 使用已缓存的描述 (625 字)
+  [revfactory/harness] 使用已缓存的描述 (529 字)
+  [EveryInc/compound-engineering-plugin] 使用已缓存的描述 (634 字)
+  [affaan-m/ECC] 使用已缓存的描述 (501 字)
+  [galilai-group/stable-worldmodel] 使用已缓存的描述 (587 字)
+  [microsoft/markitdown] AI 描述长度: 536 字
+  [harry0703/MoneyPrinterTurbo] AI 描述长度: 408 字
+  [anthropics/claude-code] AI 描述长度: 478 字
+  [cursor/plugins] AI 描述长度: 481 字
+  [revfactory/harness] AI 描述长度: 394 字
+  [EveryInc/compound-engineering-plugin] AI 描述长度: 529 字
+  [affaan-m/ECC] AI 描述长度: 553 字
+  [OpenBMB/VoxCPM] AI 描述长度: 427 字
+  [galilai-group/stable-worldmodel] AI 描述长度: 452 字
+  [Crosstalk-Solutions/project-nomad] AI 描述长度: 476 字
+
+📧 正在生成邮件内容...
+📤 正在发送邮件到 kim.han@sinoboom.com.cn...
+✅ 邮件发送成功！
+
+=== JSON ===
+{
+  "success": true,
+  "projects_count": 10,
+  "date": "2026-05-31"
+}
+=== END JSON ===

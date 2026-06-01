@@ -20,6 +20,14 @@
     "proactive-agent": {
       "version": "3.1.0",
       "installedAt": 1774420941292
+    },
+    "getnote": {
+      "version": "1.8.3",
+      "installedAt": 1779343505568
+    },
+    "tk-competitor-intel": {
+      "version": "1.0.0",
+      "installedAt": 1779889750168
     }
   }
 }

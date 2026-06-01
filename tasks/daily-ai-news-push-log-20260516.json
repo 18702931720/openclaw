@@ -1,0 +1,13 @@
+{
+  "task": "daily_ai_news",
+  "push_date": "2026-05-16",
+  "push_time": "2026-05-16 07:00",
+  "status": "failed",
+  "message_id": "N/A",
+  "domestic_count": 6,
+  "international_count": 6,
+  "recipient": {
+    "id": "004235",
+    "name": "韩瑾君"
+  }
+}
