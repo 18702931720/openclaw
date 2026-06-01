@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Product Hunt + Hacker News 产品发现日报
+Product Hunt + Hacker News 产品发现日报 v2.0
 抓取两个平台当天的热门产品/话题，生成 AI 中文解读，邮件推送
+- 优化点：AI 总览摘要、一句话价值描述、平台差异化、分类标签、视觉升级
 cron: 0 8 * * *  (每天早上 8 点)
 """
 
@@ -33,7 +34,20 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 
-# ─── HTTP ────────────────────────────────────────────
+# ─── 关注赛道标签映射 ─────────────────────────────────
+CATEGORY_TAGS = {
+    "ai":      "🤖 AI平台",
+    "cloud":   "☁️ 云原生",
+    "ci":      "🔄 CI/CD",
+    "devops":  "🔧 DevOps",
+    "mlops":   "📊 MLOps",
+    "collab":  "👥 协作",
+    "db":      "🗄️ 数据库",
+    "security":"🔐 安全",
+    "infra":   "🏗️ 基础设施",
+}
+
+# ─── HTTP ─────────────────────────────────────────────
 def http_get(url, headers=None, timeout=15):
     h = dict(HEADERS)
     if headers:
@@ -47,7 +61,7 @@ def http_get(url, headers=None, timeout=15):
         print("  [WARN] GET {} -> {}".format(url, e))
         return None
 
-# ─── Product Hunt ────────────────────────────────────
+# ─── Product Hunt ─────────────────────────────────────
 def fetch_product_hunt():
     """抓取 Product Hunt 今日热门产品（通过公开 Atom Feed）"""
     try:
@@ -72,7 +86,7 @@ def fetch_product_hunt():
             desc = re.sub(r'<[^>]+>', '', content).strip()
             desc = desc.replace('&lt;', '<').replace('&gt;', '>').replace('&amp;', '&')
 
-            author_m = re.search(r'<author>.*?<name>([^<]+)</name>', entry, re.DOTALL)
+            author_m = re.search(r'<author>.*?<name>([^<]+)</name>', entry)
             author = author_m.group(1).strip() if author_m else ""
 
             published_m = re.search(r'<published>([^<]+)</published>', entry)
@@ -89,14 +103,15 @@ def fetch_product_hunt():
                     "author": author,
                     "published": published,
                     "platform": "Product Hunt",
-                    "url": url
+                    "url": url,
+                    "category": _detect_category(title + " " + desc),
                 })
         return products[:10]
     except Exception as e:
         print("  [WARN] Product Hunt Feed 失败: {}".format(e))
         return []
 
-# ─── AlternativeTo ────────────────────────────────────
+# ─── AlternativeTo ─────────────────────────────────────
 def fetch_alternativeto():
     try:
         html = http_get("https://alternativeto.net/")
@@ -115,14 +130,15 @@ def fetch_alternativeto():
                     "path": slug,
                     "title": name.strip(),
                     "platform": "AlternativeTo",
-                    "url": "https://alternativeto.net/software/{}/".format(slug)
+                    "url": "https://alternativeto.net/software/{}/".format(slug),
+                    "category": _detect_category(name),
                 })
         return tools
     except Exception as e:
         print("  [WARN] AlternativeTo 失败: {}".format(e))
         return []
 
-# ─── There's An AI For That ───────────────────────────
+# ─── There's An AI For That ────────────────────────────
 def fetch_ai_tools():
     try:
         url = "https://theresanaiforthat.com/"
@@ -142,14 +158,15 @@ def fetch_ai_tools():
                     "path": slug,
                     "title": name.strip(),
                     "platform": "There's An AI For That",
-                    "url": "https://theresanaiforthat.com/tools/{}/".format(slug)
+                    "url": "https://theresanaiforthat.com/tools/{}/".format(slug),
+                    "category": "ai",
                 })
         return tools
     except Exception as e:
         print("  [WARN] There's An AI For That 失败: {}".format(e))
         return []
 
-# ─── Hacker News ─────────────────────────────────────
+# ─── Hacker News ────────────────────────────────────────
 def fetch_hacker_news():
     try:
         today = datetime.utcnow()
@@ -179,6 +196,8 @@ def fetch_hacker_news():
                         "points": points,
                         "comments": num_comments,
                         "platform": "Hacker News",
+                        "category": _detect_category(title),
+                        "heat": _calc_heat(points, num_comments),
                     })
             if stories:
                 return stories
@@ -206,6 +225,8 @@ def fetch_hacker_news():
                             "points": item.get("score", 0),
                             "comments": item.get("descendants", 0),
                             "platform": "Hacker News",
+                            "category": _detect_category(item.get("title", "")),
+                            "heat": _calc_heat(item.get("score", 0), item.get("descendants", 0)),
                         })
                 time.sleep(0.3)
             return stories
@@ -213,35 +234,113 @@ def fetch_hacker_news():
         print("  [WARN] HN Firebase 降级失败: {}".format(e))
         return []
 
-# ─── AI 生成描述 ─────────────────────────────────────
-def summarize_items(items):
+# ─── 分类检测 ──────────────────────────────────────────
+def _detect_category(text):
+    text_lower = text.lower()
+    if any(k in text_lower for k in ["ai", "llm", "gpt", "claude", "gemini", "model", "nlp", "生成式", "大模型"]):
+        return "ai"
+    if any(k in text_lower for k in ["aws", "azure", "gcp", "cloud", "kubernetes", "k8s", "容器", "serverless"]):
+        return "cloud"
+    if any(k in text_lower for k in ["ci/cd", "pipeline", "github action", "gitlab ci", "jenkins", "自动化"]):
+        return "ci"
+    if any(k in text_lower for k in ["devops", "sre", "deploy", "infrastructure", "terraform"]):
+        return "devops"
+    if any(k in text_lower for k in ["mlops", "machine learning", "train", "model serving", "的特征"]):
+        return "mlops"
+    if any(k in text_lower for k in ["collab", "collaboration", "team", "slack", "notion", "协作"]):
+        return "collab"
+    if any(k in text_lower for k in ["database", "db", "postgres", "mysql", "redis", "sqlite"]):
+        return "db"
+    if any(k in text_lower for k in ["security", "auth", "oauth", "password", "zero trust", "安全"]):
+        return "security"
+    if any(k in text_lower for k in ["infra", "infrastructure", "dns", "cdn", "edge"]):
+        return "infra"
+    return "other"
+
+# ─── HN 讨论热度指数 ────────────────────────────────────
+def _calc_heat(points, comments):
+    score = (points or 0) * 1 + (comments or 0) * 2
+    if score >= 200:
+        return "🔥🔥🔥"
+    elif score >= 100:
+        return "🔥🔥"
+    elif score >= 50:
+        return "🔥"
+    return ""
+
+# ─── AI 生成价值描述 + 总览摘要 ─────────────────────────
+def generate_ai_content(all_items):
+    """调用 MiniMax 同时生成：总览摘要 + 每条价值描述"""
     if not MINIMAX_API_KEY:
-        return [fallback_desc(item) for item in items]
+        return None, [fallback_desc(item) for item in all_items]
 
     items_text = ""
-    for i, item in enumerate(items, 1):
+    for i, item in enumerate(all_items, 1):
         title = item.get("title", "")
         url = item.get("url", "")
         platform = item.get("platform", "")
         votes = item.get("votes", item.get("points", ""))
         comments = item.get("comments", "")
         desc = item.get("description", "")
-        items_text += "\n=== Product {} [{}]\nName: {}\nTagline: {}\nURL: {}\nStats: votes={}, comments={}\n".format(
-            i, platform, title, desc if desc else 'N/A', url, votes, comments
+        category = item.get("category", "other")
+        tag = CATEGORY_TAGS.get(category, "📦 通用工具")
+        items_text += '\n### Product {} [{}] ({})\nName: {}\nTagline: {}\nURL: {}\nStats: votes/points={}, comments={}\n'.format(
+            i, platform, tag, title, desc if desc else 'N/A', url, votes, comments
         )
 
-    prompt = "You are a professional product analyst. For each of the following {} items from Product Hunt and Hacker News, write a concise Chinese description of 80-120 characters.\nFormat each item as:\n### Product N [Platform]\n[80-120 char Chinese description]\n\nRequirements:\n- Each description: product name + one-line positioning + core highlight (1-2 sentences)\n- Be specific, not generic\n- Strictly follow the format below (no intro/outro):\n\n### Product 1 [Platform]\n[description]\n\n## Product List\n{}\n\n## Output Format\nStrictly output {} items in the following format:\n### Product 1 [Platform]\n[80-120 chars]\n### Product 2 [Platform]\n[80-120 chars]\n...(total {} items)".format(len(items), items_text, len(items), len(items))
+    prompt = """You are a senior product analyst covering AI Cloud platforms, DevOps, and developer tooling.
+
+For the following {num} products and topics from Product Hunt and Hacker News, generate:
+
+## 1. Executive Overview (in Chinese)
+A 150-character summary of the most important trend today: what category is hottest, what's notable, and one sharp insight. Format:
+**📌 今日观察** [150 chars Chinese]
+
+## 2. Per-Item Value Description (in Chinese)
+For each item, write a 60-100 character Chinese description: product name + one-line positioning + why it matters. Format strictly as:
+### Product N [Platform]
+[60-100 chars Chinese description]
+
+## Input
+{items_text}
+
+## Output Format
+**📌 今日观察** [150 chars]
+### Product 1 [Platform]
+[desc]
+### Product 2 [Platform]
+[desc]
+... (total {num} items)""".format(num=len(all_items), items_text=items_text)
 
     result_text = _call_minimax(prompt)
-    if result_text:
-        parsed = _parse_items_text(result_text, len(items))
-        if len(parsed) >= len(items) * 0.7:
-            result = [fallback_desc(item) for item in items]
-            for i, desc in enumerate(parsed[:len(result)]):
-                result[i] = desc
-            return result
+    if not result_text:
+        return None, [fallback_desc(item) for item in all_items]
 
-    return [fallback_desc(item) for item in items]
+    # 解析总览摘要
+    overview = None
+    overview_m = re.search(r'\*\*📌 今日观察\*\*\s*(.{100,200}?)(?=\n###|\Z)', result_text, re.DOTALL)
+    if overview_m:
+        overview = overview_m.group(1).strip()
+
+    # 解析每条描述
+    parsed = []
+    parts = re.split(r'###\s*Product\s*(\d+)', result_text)
+    idx = 2
+    while idx < len(parts) and len(parsed) < len(all_items):
+        desc = parts[idx].strip()
+        if desc:
+            parsed.append(desc)
+        idx += 2
+
+    if not overview or len(parsed) < len(all_items) * 0.5:
+        return None, [fallback_desc(item) for item in all_items]
+
+    # 不足的补 fallback
+    while len(parsed) < len(all_items):
+        parsed.append(fallback_desc(all_items[len(parsed)]))
+    parsed = parsed[:len(all_items)]
+
+    return overview, parsed
 
 def _call_minimax(prompt):
     for attempt in range(2):
@@ -274,24 +373,13 @@ def _call_minimax(prompt):
                 time.sleep(3)
     return None
 
-def _parse_items_text(text, expected):
-    results = []
-    parts = re.split(r'###\s*Product\s*(\d+)', text)
-    idx = 2
-    while idx < len(parts) and len(results) < expected:
-        desc = parts[idx].strip()
-        if desc:
-            results.append(desc)
-        idx += 2
-    return results
-
 def fallback_desc(item):
     title = item.get("title", "")
     platform = item.get("platform", "")
     desc = item.get("description", "")
     if desc:
         return desc
-    return "From {} - {}".format(platform, title)
+    return "来自 {} - {}".format(platform, title)
 
 # ─── 缓存 ─────────────────────────────────────────────
 def _load_cache():
@@ -310,9 +398,8 @@ def _save_cache(cache):
     except Exception:
         pass
 
-# ─── 邮件 HTML ──────────────────────────────────────
-def generate_email_content(all_items, date_str):
-    # 只取前 10 条
+# ─── 邮件 HTML ────────────────────────────────────────
+def generate_email_content(all_items, date_str, overview=None):
     all_items = all_items[:10]
 
     # 按平台分组
@@ -323,21 +410,22 @@ def generate_email_content(all_items, date_str):
             platforms[p] = []
         platforms[p].append(item)
 
+    # 平台样式
     platform_styles = {
-        "Product Hunt": ("#e65100", "#fff3e0"),
-        "Hacker News": ("#ff5722", "#fbe9e7"),
-        "AlternativeTo": ("#4caf50", "#e8f5e9"),
-        "There's An AI For That": ("#9c27b0", "#f3e5f5"),
+        "Product Hunt":           ("#e65100", "#fff3e0", "🛠️"),
+        "Hacker News":            ("#ff5722", "#fbe9e7", "📰"),
+        "AlternativeTo":           ("#4caf50", "#e8f5e9", "🔧"),
+        "There's An AI For That": ("#9c27b0", "#f3e5f5", "🤖"),
     }
 
     idx = 0
     rows_html = ""
 
     for platform, items in platforms.items():
-        color, bg = platform_styles.get(platform, ("#24292e", "#f6f8fa"))
-        emoji = "🛠" if platform == "Product Hunt" else "📰" if platform == "Hacker News" else "🔧" if platform == "AlternativeTo" else "🤖"
+        color, bg, emoji = platform_styles.get(platform, ("#24292e", "#f6f8fa", "📦"))
+        is_hn = platform == "Hacker News"
 
-        # Platform header row
+        # Platform header
         rows_html += "<tr>"
         rows_html += "<td colspan=\"2\" style=\"padding:12px 20px 6px;background:" + bg + ";border-bottom:1px solid #eaecef;\">"
         rows_html += "<span style=\"font-size:13px;font-weight:700;color:" + color + ";\">" + emoji + " " + platform + " · 热门产品</span>"
@@ -345,50 +433,107 @@ def generate_email_content(all_items, date_str):
 
         for item in items:
             idx += 1
-            desc = item.get("ai_description", "") or ""
+            ai_desc = item.get("ai_description", "")
+            title = item.get("title", "")
+            url = item.get("url", "")
             votes = item.get("votes", item.get("points", "—"))
             comments = item.get("comments", "—")
-            title = item.get("title", "")[:70]
-            url = item.get("url", "")
+            category = item.get("category", "other")
+            tag = CATEGORY_TAGS.get(category, "📦 通用工具")
+            heat = item.get("heat", "")
 
-            if item.get("platform") == "Hacker News":
-                extra_info = "⬆ {} pts 💬 {} comments".format(votes, comments)
-            elif item.get("platform") == "Product Hunt":
-                extra_info = "⬆ {} votes 💬 {} comments".format(votes, comments)
+            if is_hn:
+                extra_info = "⬆ {} pts 💬 {} comments {}".format(votes, comments, heat)
             else:
-                extra_info = ""
+                extra_info = "⬆ {} votes 💬 {} comments".format(votes, comments)
 
-            # Item row
+            # Tag badge
+            tag_html = '<span style="display:inline-block;background:#e8f4ff;color:#0366d6;font-size:11px;font-weight:600;padding:2px 8px;border-radius:12px;margin-right:6px;">' + tag + '</span>'
+
             rows_html += "<tr>"
             rows_html += "<td style=\"padding:14px 20px;border-bottom:1px solid #eaecef;vertical-align:top;\">"
-            rows_html += "<div style=\"font-size:15px;font-weight:700;color:{};margin-bottom:6px;\">".format(color)
-            rows_html += "{}. <a href=\"{}\" style=\"color:{};text-decoration:none;\">{}</a>".format(idx, url, color, title)
+
+            # Title row with tag
+            rows_html += "<div style=\"display:flex;align-items:start;margin-bottom:6px;\">"
+            rows_html += "<div style=\"flex:1;\">"
+            rows_html += "<div style=\"font-size:15px;font-weight:700;color:#24292e;margin-bottom:4px;line-height:1.4;\">"
+            rows_html += "{} <a href=\"{}\" style=\"color:{};text-decoration:none;\">{}</a>".format(idx, url, color, title)
             rows_html += "</div>"
-            rows_html += "<div style=\"font-size:13px;color:#586069;margin-bottom:4px;\">[{}]</div>".format(platform)
-            rows_html += "<div style=\"font-size:13px;color:#24292e;line-height:1.8;margin-bottom:6px;word-break:break-word;\">{}</div>".format(desc)
-            rows_html += "<div style=\"font-size:12px;color:#888;\">{} <a href=\"{}\" style=\"color:#0366d6;text-decoration:none;margin-left:8px;\">🔗 查看详情 →</a></div>".format(extra_info, url)
+            rows_html += tag_html
+            rows_html += "</div></div>"
+
+            # AI description
+            if ai_desc:
+                rows_html += "<div style=\"font-size:13px;color:#24292e;line-height:1.7;margin-bottom:8px;padding:8px 10px;background:#f6f8fa;border-left:3px solid " + color + ";border-radius:0 4px 4px 0;\">"
+                rows_html += "<span style=\"color:#888;font-size:11px;margin-right:4px;\">💡</span>" + ai_desc
+                rows_html += "</div>"
+
+            # Stats + link
+            rows_html += "<div style=\"font-size:12px;color:#888;\">"
+            rows_html += extra_info
+            rows_html += " <a href=\"{}\" style=\"color:#0366d6;text-decoration:none;margin-left:8px;\">🔗 查看详情 →</a>".format(url)
+            rows_html += "</div>"
             rows_html += "</td></tr>"
 
+    # 标签墙
+    tag_counts = {}
+    for item in all_items:
+        cat = item.get("category", "other")
+        tag_counts[cat] = tag_counts.get(cat, 0) + 1
+
+    badge_html = ""
+    for cat, count in sorted(tag_counts.items(), key=lambda x: -x[1]):
+        tag = CATEGORY_TAGS.get(cat, "📦 通用工具")
+        badge_html += '<span style="display:inline-block;background:#24292e;color:#fff;font-size:11px;font-weight:600;padding:3px 10px;border-radius:12px;margin:3px;">{} {}个</span>'.format(tag, count)
+
     total = len(all_items)
+    ph_count = sum(1 for i in all_items if i.get("platform") == "Product Hunt")
+    hn_count = sum(1 for i in all_items if i.get("platform") == "Hacker News")
+
+    # 总览摘要
+    overview_html = ""
+    if overview:
+        overview_html = """
+        <div style="margin:0 20px 16px;padding:14px 16px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border-radius:8px;color:white;">
+            <div style="font-size:11px;font-weight:700;margin-bottom:6px;letter-spacing:0.5px;">📌 今日观察</div>
+            <div style="font-size:13px;line-height:1.7;">{}</div>
+        </div>""".format(overview)
 
     html = (
         '<!DOCTYPE html><html><head><meta charset="utf-8"><title>产品发现日报</title></head>'
         '<body style="margin:0;padding:0;background-color:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif;">'
         '<div style="max-width:720px;margin:0 auto;padding:16px;">'
+
+        # Header
         '<div style="background:linear-gradient(135deg,#e65100 0%,#ff8a65 100%);border-radius:12px 12px 0 0;padding:20px 24px;">'
         '<div style="display:flex;align-items:center;gap:10px;">'
-        '<div style="font-size:24px;">🚀</div>'
+        '<div style="font-size:28px;">🚀</div>'
         '<div>'
-        '<div style="color:white;font-size:18px;font-weight:700;">产品发现日报</div>'
+        '<div style="color:white;font-size:18px;font-weight:700;">产品发现日报 v2.0</div>'
         '<div style="color:#fff3e0;font-size:12px;margin-top:2px;">Product Hunt × Hacker News · ' + date_str + ' · 每日 8:00 推送</div>'
         '</div></div></div>'
-        '<div style="background:white;border:1px solid #e1e4e8;border-top:none;">'
-        '<div style="padding:10px 20px;background:#f6f8fa;border-bottom:1px solid #eaecef;font-size:12px;color:#586069;">'
-        '🔥 今日热门产品 & 话题 · AI 中文解读 · 共 ' + str(total) + ' 条'
+
+        # Summary bar
+        '<div style="background:white;border:1px solid #e1e4e8;border-top:none;padding:10px 20px;font-size:12px;color:#586069;">'
+        '🔥 今日热门 · 共 ' + str(total) + ' 条 (PH: ' + str(ph_count) + ' / HN: ' + str(hn_count) + ')'
         '</div>'
+
+        # Overview (AI summary)
+        + overview_html +
+
+        # Tag badges
+        '<div style="background:white;border:1px solid #e1e4e8;border-top:none;padding:10px 20px;">'
+        '<div style="font-size:11px;color:#888;margin-bottom:6px;">🏷️ 今日涉及领域</div>'
+        + badge_html +
+        '</div>'
+
+        # Items table
+        '<div style="background:white;border:1px solid #e1e4e8;border-top:none;margin-top:8px;">'
         '<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">' +
         rows_html +
         '</table></div>'
+
+        # Footer
         '<div style="background:#24292e;border-radius:0 0 12px 12px;padding:12px 24px;">'
         '<div style="color:#8b949e;font-size:11px;text-align:center;">'
         '<div style="margin-bottom:4px;">📊 <a href="https://producthunt.com" style="color:#58a6ff;text-decoration:none;">Product Hunt</a> · <a href="https://news.ycombinator.com" style="color:#58a6ff;text-decoration:none;">Hacker News</a></div>'
@@ -398,37 +543,30 @@ def generate_email_content(all_items, date_str):
     return html
 
 def send_email(to_email, subject, html_content, date_str):
+    msg = MIMEMultipart('alternative')
+    msg['Subject'] = Header(subject, 'utf-8')
+    msg['From'] = formataddr(['AI 产品助手', SMTP_CONFIG["email"]])
+    msg['To'] = to_email
+    msg.attach(MIMEText(html_content, 'html', 'utf-8'))
     try:
-        msg = MIMEMultipart('alternative')
-        msg['From'] = formataddr((Header("产品发现日报", 'utf-8').encode(), SMTP_CONFIG["email"]))
-        msg['To'] = to_email
-        msg['Subject'] = Header(subject, 'utf-8')
-        plain = "产品发现日报 {}\n\nProduct Hunt × Hacker News\n\nhttps://producthunt.com\nhttps://news.ycombinator.com".format(date_str)
-        msg.attach(MIMEText(plain, 'plain', 'utf-8'))
-        msg.attach(MIMEText(html_content, 'html', 'utf-8'))
-        server = smtplib.SMTP_SSL(SMTP_CONFIG['smtp_host'], SMTP_CONFIG['smtp_port'])
-        server.login(SMTP_CONFIG["email"], SMTP_CONFIG["password"])
-        server.sendmail(SMTP_CONFIG["email"], [to_email], msg.as_string())
-        server.quit()
+        with smtplib.SMTP_SSL(SMTP_CONFIG["smtp_host"], SMTP_CONFIG["smtp_port"]) as server:
+            server.login(SMTP_CONFIG["email"], SMTP_CONFIG["password"])
+            server.sendmail(SMTP_CONFIG["email"], [to_email], msg.as_string())
         return {"success": True}
     except Exception as e:
-        print("❌ 发送失败: {}".format(e))
-        import traceback; traceback.print_exc()
         return {"success": False, "message": str(e)}
 
-# ─── 主流程 ──────────────────────────────────────────
+# ─── Main ─────────────────────────────────────────────
 def main():
     today = datetime.now()
     date_str = today.strftime("%Y-%m-%d")
-    subject = "🚀 产品发现日报 | {}".format(date_str)
+    subject = "🚀 产品发现日报 v2.0 | {}".format(date_str)
 
     print("📅 Date: {}".format(date_str))
 
     print("\n🛠️ Fetching Product Hunt today's hot...")
     ph_items = fetch_product_hunt()
     print("   ✅ Found {} products".format(len(ph_items)))
-    for item in ph_items:
-        print("   - {}".format(item['title'][:60]))
 
     print("\n🔧 Fetching AlternativeTo hot...")
     at_items = fetch_alternativeto()
@@ -441,8 +579,6 @@ def main():
     print("\n📰 Fetching Hacker News today's hot...")
     hn_items = fetch_hacker_news()
     print("   ✅ Found {} topics".format(len(hn_items)))
-    for item in hn_items:
-        print("   - [{} pts] {}".format(item.get('points',0), item['title'][:60]))
 
     all_items = ph_items + at_items + ai_items + hn_items
 
@@ -452,14 +588,21 @@ def main():
 
     print("\n📊 Total {} items collected".format(len(all_items)))
 
-    print("\n🤖 Generating {} AI descriptions via MiniMax...".format(len(all_items)))
-    ai_descs = summarize_items(all_items)
+    # 统计分类
+    from collections import Counter
+    cat_counter = Counter(i.get("category","other") for i in all_items)
+    print("\n🏷️ Category breakdown: {}".format(dict(cat_counter)))
+
+    print("\n🤖 Generating AI overview + {} value descriptions via MiniMax...".format(len(all_items)))
+    overview, ai_descs = generate_ai_content(all_items)
+    if overview:
+        print("   📌 Overview: {}".format(overview[:80]))
     for item, desc in zip(all_items, ai_descs):
         item["ai_description"] = desc
         print("   [{}] {} chars".format(item['title'][:40], len(desc)))
 
     print("\n📧 Generating email content...")
-    html_content = generate_email_content(all_items, date_str)
+    html_content = generate_email_content(all_items, date_str, overview)
 
     print("📤 Sending email to {}...".format(TO_EMAIL))
     result = send_email(TO_EMAIL, subject, html_content, date_str)
